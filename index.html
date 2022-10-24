@@ -32,22 +32,24 @@
     <h1 id="title">Survey Form</h1>
     <p id="description"> this form is about surveying and collecting data</p>
     <form id="survey-form">
-        <label id="label-name">Name</label>
-        <input id="name" type="text" required placeholder="enter your name">
-        <label id="label-email">Your Email</label>
-        <input type="text" id="email" required placeholder="enter your email">
-        <label id="label-number">rite Your Number</label>
-        <input type="number" id="number">
+      <label id="name-label">Name</label> 
+      <input type="text" id="name" required placeholder="Enter Your Name"><br>
+      <label id="email-label">Email Address</label>
+      <input type="email" id="email" required placeholder="Your Email Address"><br>
+      <label id="number-label">Numbers</label>
+      <input type="number" id="number" min="0" max="500" placeholder="put a number"><br>
        <select id="dropdown">
-        <option>1</option>
-        <option>2</option>
-       </select>
-       <input type="radio" name="radio1">
-       <input type="radio" name="radio2">
-       <input type="checkboxe" value="value1">
-       <input type="ckeckboxe" value="value2">
-       <textarea name="comment" cols="30" rows="10"></textarea>
-       <button id="submit">SUBMIT</button>
+        <option value="1">one</option>
+        <option value="2">two</option>       
+      </select><br>
+      <input type="radio" name="radio1" value="1">
+      <input type="radio" name="radio2" value="2"><br>
+      <input type="radio" name="radio1" value="3">
+      <input type="radio" name="radio2" value="4"><br>
+      <input type="checkbox" value="1">
+      <input type="checkbox" value="2"><br>
+      <textarea name="comments" id="comments">Any additional comments?</textarea><br>
+      <button id="submit">Click to submit</button>
     </form>
   </body>
 </html>
